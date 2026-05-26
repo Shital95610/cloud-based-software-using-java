@@ -4,14 +4,21 @@
 
 ## ⚡ Architecture Used
 - **Microservices**: 3 services using Spring Boot 
-- **Deployed On**: Azure Kubernetes Service (AKS)
-- **Communication**: REST APIs + Azure Service Bus
-- **Database**: Azure SQL + Redis Cache
+- **Deployed On**: AWS EC2
+- **Communication**: REST APIs+ AWS SQS for async decoupling
+- **Database**: AWS RDS MySQL
 - **DSA Used**: HashSet for O(n) duplicate API calls detection
+  
+  ## Microservices Breakdown - For Accenture L10
+| **Service Name** | **Cloud Used** | **Purpose** | **L10 Concept** |
+| --- | --- | --- | --- |
+| **UserService** | AWS EC2 | User management | HashSet O(n) duplicate check |
+| **OrderService** | AWS RDS MySQL | Order creation | Saves order to managed DB |
+| **PaymentService** | AWS SQS | Async payments | Decoupling via Queue |
 
 ## 🏆 L10 Interview Points
 1. "Sir maine monolith ko 3 microservices me toda, O(n²) se O(n) kiya"
-2. "AKS pe auto-scaling lagaya, 10K RPM handle kiya"
+2. "AWS SQS i use for decoupling ,OrderService not fail". 
 
 ## 🔗 Roles This Project Is Relevant For
 This microservices architecture aligns with requirements for:
