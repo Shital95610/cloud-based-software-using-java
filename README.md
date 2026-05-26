@@ -1,6 +1,8 @@
  # Cloud Based Software - Java Microservices | AWS
 
 ## 🎯 Target: Accenture L10 - Cloud Data Engineer
+ # Java Microservices on AWS for Accenture L10
+> Spring Boot | AWS RDS | AWS SQS | O(n) HashSet DSA | REST APIs
 
 ## ⚡ Architecture Used
 - **Microservices**: 3 services using Spring Boot 
