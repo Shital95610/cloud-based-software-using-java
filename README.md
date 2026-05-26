@@ -1,4 +1,4 @@
- # Cloud Based Software - Java Microservices | Azure AKS
+ # Cloud Based Software - Java Microservices | AWS
 
 ## 🎯 Target: Accenture L10 - Cloud Data Engineer
 
